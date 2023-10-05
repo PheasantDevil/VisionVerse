@@ -1,6 +1,65 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ]
+  "automerge": true,
+  "automergeType": "pr",
+  "branchConcurrentLimit": 0,
+  "branchPrefix": "renovate/",
+  "commitMessagePrefix": "[Renovate] ",
+  "dependencyDashboard": false,
+  "extends": ["config:base", ":timezone(Asia/Tokyo)"],
+  "ignorePresets": [":prHourlyLimit2"],
+  "labels": ["dependencies", "renovate"],
+  "npm": {
+    "rangeStrategy": "bump"
+  },
+  "packageRules": [
+    {
+      "automerge": false,
+      "matchUpdateTypes": ["major"]
+    },
+    {
+      "automerge": true,
+      "groupName": "jest",
+      "sourceUrlPrefixes": [
+        "https://github.com/facebook/jest",
+        "https://github.com/kulshekhar/ts-jest"
+      ]
+    },
+    {
+      "automerge": true,
+      "extends": ["packages:linters"],
+      "groupName": "linters",
+      "packageNames": ["prettier"],
+      "packagePatterns": ["^@typescript-eslint/"]
+    },
+    {
+      "automerge": true,
+      "groupName": "actions for github actions workflows",
+      "groupSlug": "actions-update-for-github-actions-workflows",
+      "matchDepTypes": ["githubActionsForWorkflows"]
+    },
+    {
+      "automerge": true,
+      "groupName": "docker image for github actions workflows",
+      "groupSlug": "docker-image-update-for-github-actions-workflows",
+      "matchDepTypes": ["dockerImageForWorkflows"]
+    },
+    {
+      "automerge": false,
+      "matchUpdateTypes": ["minor"]
+    },
+    {
+      "automerge": true,
+      "matchUpdateTypes": ["patch"]
+    }
+  ],
+  "pin": {
+    "automerge": true
+  },
+  "prCreation": "immediate",
+  "rangeStrategy": "auto",
+  "repositories": ["PheasantDevil/test-various-tools"],
+  "schedule": ["after 9pm and before 11pm every weekday", "every weekend"],
+  "statusCheckVerify": true,
+  "token": "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"
 }
