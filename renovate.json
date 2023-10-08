@@ -52,13 +52,19 @@
     {
       "automerge": true,
       "matchUpdateTypes": ["patch"]
+    },
+    {
+      "matchPackageNames": [
+        "特定のライブラリ名（範囲指定子にしたいライブラリがあれば）"
+      ],
+      "rangeStrategy": "pin（範囲指定子を付けるか否か）"
     }
   ],
   "pin": {
     "automerge": true
   },
   "prCreation": "immediate",
-  "rangeStrategy": "auto",
+  "rangeStrategy": "pin",
   "repositories": ["PheasantDevil/test-various-tools"],
   "schedule": ["after 9pm and before 11pm every weekday", "every weekend"],
   "statusCheckVerify": true,
