@@ -2,11 +2,9 @@
 
 close #{IssueNumber}
 
-### 作成内容
+### 作成内容（Issueに書く必要はないが、一応書いておきたいことあれば）
 
-- [Issue](https://github.com/KonishiKenji/VisionVerse/issues/{IssueNumber})
-
-## 確認事項
+## 何かあれば
 
 〜特になければ項目自体削除
 
