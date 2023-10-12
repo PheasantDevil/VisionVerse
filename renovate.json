@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": true,
   "automergeType": "pr",
-  "baseBranches": ["develop", "main", "****"],
+  "baseBranches": ["develop", "****"],
   "branchConcurrentLimit": 0,
   "branchPrefix": "renovate/",
   "commitMessagePrefix": "[Renovate] ",
