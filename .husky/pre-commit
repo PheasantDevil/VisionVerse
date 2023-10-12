@@ -1,0 +1,10 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+npm test
+
+if [ "$(expr substr "$(uname -s)" 1 5)" = "MINGW" ]; then
+npx.cmd lint-staged
+else
+npx lint-staged
+fi
