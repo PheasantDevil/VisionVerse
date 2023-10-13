@@ -42,3 +42,39 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## コミット
+
+### フォーマット
+
+Semantic Commit Messageを採用しています。
+
+```
+フォーマット:
+<Type>: <Emoji> #<Issue Number> <Title>
+例: feat: ✨ #123 ログイン機能の実装をする
+TypeとTitleは必須
+Issue Numberは強く推奨
+Emojiは任意
+Description（スリーライン）は任意
+```
+
+### Type
+
+どんなコミットなのかシュッと分かるようにPrefixとしてコミットの種別を書きます  
+Semantic Commit Messageと同様の種別を使います
+
+- chore  
+  タスクファイルなどプロダクションに影響のない修正
+- docs  
+  ドキュメントの更新
+- feat  
+  ユーザー向けの機能の追加や変更
+- fix  
+  ユーザー向けの不具合の修正
+- refactor  
+  リファクタリングを目的とした修正
+- style  
+  フォーマットなどのスタイルに関する修正
+- test  
+  テストコードの追加や修正

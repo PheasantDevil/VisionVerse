@@ -2,7 +2,7 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": true,
   "automergeType": "pr",
-  "baseBranches": ["develop", "main", "****"],
+  "baseBranches": ["develop", "****"],
   "branchConcurrentLimit": 0,
   "branchPrefix": "renovate/",
   "commitMessagePrefix": "[Renovate] ",
@@ -52,13 +52,21 @@
     {
       "automerge": true,
       "matchUpdateTypes": ["patch"]
+    },
+    {
+      "matchPackageNames": [
+        "特定のライブラリ名（範囲指定子にしたいライブラリがあれば）"
+      ],
+      "rangeStrategy": "pin（範囲指定子を付けるか否か）"
     }
   ],
   "pin": {
     "automerge": true
   },
   "prCreation": "immediate",
-  "rangeStrategy": "auto",
+  "rangeStrategy": "pin",
+  "rebaseWhen": "behind-base-branch",
+  "recreateWhen": "always",
   "repositories": ["PheasantDevil/test-various-tools"],
   "schedule": ["after 9pm and before 11pm every weekday", "every weekend"],
   "statusCheckVerify": true,
