@@ -65,6 +65,8 @@
   },
   "prCreation": "immediate",
   "rangeStrategy": "pin",
+  "rebaseWhen": "behind-base-branch",
+  "recreateWhen": "always",
   "repositories": ["PheasantDevil/test-various-tools"],
   "schedule": ["after 9pm and before 11pm every weekday", "every weekend"],
   "statusCheckVerify": true,
