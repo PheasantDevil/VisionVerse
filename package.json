@@ -1,5 +1,8 @@
 {
   "dependencies": {
+    "@pankod/refine": "^2.7.8",
+    "@pankod/refine-nextjs-router": "^4.5.0",
+    "@pankod/refine-simple-rest": "^3.39.0",
     "next": "14.0.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
