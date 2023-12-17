@@ -5,9 +5,12 @@ type Data = {
   name: string;
 };
 
-export default function handler(
-  req: NextApiRequest,
-  res: NextApiResponse<Data>,
-) {
-  res.status(200).json({ name: 'John Doe' });
-}
+const handler = (req: NextApiRequest, res: NextApiResponse<Data>) => {
+  const [name, setName] = useState('John Doe');
+
+  useEffect(() => {
+    res.status(200).json({ name });
+  }, [name]);
+};
+
+export default handler;
