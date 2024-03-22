@@ -24,7 +24,7 @@ jobs:
           node-version: '19.4.0'
 
       - name: GitHub Action for Yarn
-        uses: Borales/actions-yarn@v4.2.0
+        uses: Borales/actions-yarn@v5.0.0
         with:
           cmd: install # yarnコマンドを指定しています
 
