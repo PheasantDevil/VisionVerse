@@ -1,4 +1,19 @@
 {
+  "name": "vision-verse",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "format": "prettier --write . ",
+    "format:check": "prettier --check .",
+    "husky": "npx husky-init",
+    "lint": "next lint",
+    "prepare": "husky install",
+    "prod": "next start",
+    "start": "next build && next start",
+    "test": "jest"
+  },
   "dependencies": {
     "next": "14.0.4",
     "react": "^18.2.0",
@@ -21,23 +36,9 @@
     "lint-staged": "^15.2.7",
     "material-ui": "^0.20.2",
     "prettier": "^3.2.5",
+    "repopack": "^0.1.41",
     "ts-jest": "^29.1.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
-  },
-  "name": "vision-verse",
-  "private": true,
-  "scripts": {
-    "build": "next build",
-    "dev": "next dev",
-    "format": "prettier --write . ",
-    "format:check": "prettier --check .",
-    "husky": "npx husky-init",
-    "lint": "next lint",
-    "prepare": "husky install",
-    "prod": "next start",
-    "start": "next build && next start",
-    "test": "jest"
-  },
-  "version": "0.1.0"
+  }
 }
