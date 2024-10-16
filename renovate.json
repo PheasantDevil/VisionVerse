@@ -1,74 +1,24 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "automerge": true,
-  "automergeType": "pr",
-  "baseBranches": ["develop", "****"],
-  "branchConcurrentLimit": 0,
-  "branchPrefix": "renovate/",
-  "commitMessagePrefix": "[Renovate] ",
-  "dependencyDashboard": false,
-  "extends": ["config:base", ":timezone(Asia/Tokyo)"],
-  "ignorePresets": [":prHourlyLimit2"],
-  "labels": ["dependencies", "renovate"],
-  "npm": {
-    "rangeStrategy": "bump"
-  },
+  "extends": ["config:base"],
+  "labels": ["dependencies"],
   "packageRules": [
     {
+      "matchUpdateTypes": ["minor", "patch"],
+      "automerge": true,
+      "automergeType": "pr",
+      "excludePackagePatterns": ["*"],
+      "prConcurrentLimit": 5
+    },
+    {
+      "matchUpdateTypes": ["major"],
       "automerge": false,
-      "matchUpdateTypes": ["major"]
+      "prConcurrentLimit": 5
     },
     {
-      "automerge": true,
-      "groupName": "jest",
-      "sourceUrlPrefixes": [
-        "https://github.com/facebook/jest",
-        "https://github.com/kulshekhar/ts-jest"
-      ]
-    },
-    {
-      "automerge": true,
-      "extends": ["packages:linters"],
-      "groupName": "linters",
-      "packageNames": ["prettier"],
-      "packagePatterns": ["^@typescript-eslint/"]
-    },
-    {
-      "automerge": true,
-      "groupName": "actions for github actions workflows",
-      "groupSlug": "actions-update-for-github-actions-workflows",
-      "matchDepTypes": ["githubActionsForWorkflows"]
-    },
-    {
-      "automerge": true,
-      "groupName": "docker image for github actions workflows",
-      "groupSlug": "docker-image-update-for-github-actions-workflows",
-      "matchDepTypes": ["dockerImageForWorkflows"]
-    },
-    {
-      "automerge": false,
-      "matchUpdateTypes": ["minor"]
-    },
-    {
-      "automerge": true,
-      "matchUpdateTypes": ["patch"]
-    },
-    {
-      "matchPackageNames": [
-        "特定のライブラリ名（範囲指定子にしたいライブラリがあれば）"
-      ],
-      "rangeStrategy": "pin（範囲指定子を付けるか否か）"
+      "matchUpdateTypes": ["minor"],
+      "excludePackagePatterns": ["@*"],
+      "automerge": false
     }
   ],
-  "pin": {
-    "automerge": true
-  },
-  "prCreation": "immediate",
-  "rangeStrategy": "pin",
-  "rebaseWhen": "behind-base-branch",
-  "recreateWhen": "always",
-  "repositories": ["PheasantDevil/test-various-tools"],
-  "schedule": ["after 9pm and before 11pm every weekday", "every weekend"],
-  "statusCheckVerify": true,
-  "token": "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"
+  "prConcurrentLimit": 5
 }
