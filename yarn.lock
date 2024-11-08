@@ -1083,30 +1083,30 @@
   resolved "https://registry.yarnpkg.com/@rushstack/eslint-patch/-/eslint-patch-1.6.1.tgz#9ab8f811930d7af3e3d549183a50884f9eb83f36"
   integrity sha512-UY+FGM/2jjMkzQLn8pxcHGMaVLh9aEitG3zY2CiY7XHdLiz3bZOwa6oDxNqEMv7zZkV+cj5DOdz0cQ1BP5Hjgw==
 
-"@secretlint/core@^8.4.0":
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/core/-/core-8.5.0.tgz#b3ce63c013f89292adc0de487ec52ea15de515c9"
-  integrity sha512-thSk9lGLqtyKheL2KivgmQQ8QF6WQwm6Lbj74P2Nw2OmzAfRVfqMUIdI0OUojWugnNU0L6DMakcEowQ3tooqYg==
+"@secretlint/core@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/core/-/core-9.0.0.tgz#239ba771a4877e43a195c1e6d9692c603b7f5677"
+  integrity sha512-+ICPisxcaytrdqSh7Fkyyh9fQE2/DiUNutnWnSeC5gOoaowGwIrKt9D1pHePfLhGfBTq+ipOS6uJxmLKJ0hbJw==
   dependencies:
-    "@secretlint/profiler" "^8.5.0"
-    "@secretlint/types" "^8.5.0"
+    "@secretlint/profiler" "^9.0.0"
+    "@secretlint/types" "^9.0.0"
     debug "^4.3.7"
     structured-source "^4.0.0"
 
-"@secretlint/profiler@^8.5.0":
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/profiler/-/profiler-8.5.0.tgz#939743c15e1750fc05da0d1a7bb25f5e29f1a6a1"
-  integrity sha512-f8IAEtI5/Cn4moeCUD5zrM88KsSPkuOj3ZtJBpDsv7cXbmNS4bKFmn+eC943fMgNr7gHb2HBDjllH+uhBLG8Sg==
+"@secretlint/profiler@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/profiler/-/profiler-9.0.0.tgz#0844769d13ab7b1d3187cfc8a4515655077c1be5"
+  integrity sha512-IJBvFMGHsRAFGNa6FevNXRmA8LMNWB77lW+8VMaGNjECPhARPXu7JetfsNkTQEuKnR+Vg0r3OT9vVhmo2wowPw==
 
-"@secretlint/secretlint-rule-preset-recommend@^8.4.0":
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-8.5.0.tgz#437861ca433fa347e8f633197b0ce63746d3b5e9"
-  integrity sha512-jfvCI2nbQ/k53Ffzm/dEGxV6dW8dzMRAhImZWLc3LBkIjRv3ZcMljvbjqDsrM614QF1BGMWT7D+JCBFmzcfEFA==
+"@secretlint/secretlint-rule-preset-recommend@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/secretlint-rule-preset-recommend/-/secretlint-rule-preset-recommend-9.0.0.tgz#1f2636906a770dc25842a666c43ab37c3ec0d7ed"
+  integrity sha512-EWw2bnjZUTJ5krtSANW7AhmKam0wh/clSlrTIYpkmjwNbUHj1v9rjRqCi2V0VxktiMwkCmtqW+kX+b2EP1LrIA==
 
-"@secretlint/types@^8.5.0":
-  version "8.5.0"
-  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-8.5.0.tgz#97009b8c08d24240b20d01d6b5def249e70292c9"
-  integrity sha512-Bz1RziuGbIJKO9dyO0RWysKxGZvyGydo0tMygri96z2mPA9ijCzYAbHmYrLdin2Ce77p6HYSxD48iXelh9+Ytw==
+"@secretlint/types@^9.0.0":
+  version "9.0.0"
+  resolved "https://registry.yarnpkg.com/@secretlint/types/-/types-9.0.0.tgz#9610ef661fad00ed2a287bac5ad155afa9db2fce"
+  integrity sha512-bpbtAvx99eubfhoNgGEzm8gu9UJPFUzPSLQSvXz8BVCeGq1yJpCIp3fExcDAl7v1DAd860B/5zqMxlk9X2cOnA==
 
 "@sinclair/typebox@^0.27.8":
   version "0.27.8"
@@ -4424,15 +4424,10 @@ path-type@^5.0.0:
   resolved "https://registry.yarnpkg.com/path-type/-/path-type-5.0.0.tgz#14b01ed7aea7ddf9c7c3f46181d4d04f9c785bb8"
   integrity sha512-5HviZNaZcfqP95rwpv+1HDgUamezbqdSYTyzjTvwtJSnIH+3vnbmWsItli8OFEndS984VT55M3jduxZbX351gg==
 
-picocolors@^1.0.0:
+picocolors@^1.0.0, picocolors@^1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.1.tgz#3d321af3eab939b083c8f929a1d12cda81c26b6b"
   integrity sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==
-
-picocolors@^1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/picocolors/-/picocolors-1.1.0.tgz#5358b76a78cde483ba5cef6a9dc9671440b27d59"
-  integrity sha512-TQ92mBOW0l3LeMeyLV6mzy/kWr8lkd/hp3mTg7wYK7zJhuBStmGMBG0BdeDZS/dZx1IukaX6Bk11zcln25o1Aw==
 
 picomatch@^2.0.4, picomatch@^2.2.3, picomatch@^2.3.1:
   version "2.3.1"
@@ -4630,13 +4625,13 @@ regexp.prototype.flags@^1.5.0, regexp.prototype.flags@^1.5.1:
     set-function-name "^2.0.0"
 
 repopack@^0.1.41:
-  version "0.1.43"
-  resolved "https://registry.yarnpkg.com/repopack/-/repopack-0.1.43.tgz#2841daccba4bdaf3ccf58abd1f08c4aa82945745"
-  integrity sha512-ouIREZNWrNTN4KgnMqJu4DIpP8XuW5h1PgV48sjhooZvQCOzIAELQEhb5vso9dPhfdQvSID/7X1W3MlkuIfuSA==
+  version "0.1.45"
+  resolved "https://registry.yarnpkg.com/repopack/-/repopack-0.1.45.tgz#cf9b1860842a26a9b9f1e2e7e1fdab2c5c00a1eb"
+  integrity sha512-lcBE2Q75luW4QdVksFofIO4zPs6o87+K+EgjW/HLE0xRx00UJgvygZPVRFipFrmflBPm72JV+wZsdDbQuWyx7Q==
   dependencies:
     "@clack/prompts" "^0.7.0"
-    "@secretlint/core" "^8.4.0"
-    "@secretlint/secretlint-rule-preset-recommend" "^8.4.0"
+    "@secretlint/core" "^9.0.0"
+    "@secretlint/secretlint-rule-preset-recommend" "^9.0.0"
     cli-spinners "^2.9.2"
     commander "^12.1.0"
     globby "^14.0.2"
@@ -4646,7 +4641,7 @@ repopack@^0.1.41:
     jschardet "^3.1.4"
     log-update "^6.1.0"
     p-map "^7.0.2"
-    picocolors "^1.1.0"
+    picocolors "^1.1.1"
     strip-comments "^2.0.1"
     tiktoken "^1.0.17"
 
